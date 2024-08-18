@@ -1,0 +1,111 @@
+.autocomplete {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  font-family: Arial, sans-serif;
+  margin: 0 auto; /* Center the autocomplete container */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the input vertically */
+  justify-content: center; /* Center the input horizontally */
+  color: black; /* Set the default text color to black */
+  height: 100vh; /* Make the container full height of the viewport */
+}
+
+.autocomplete input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  color: black; /* Ensure input text is black */
+}
+
+.autocomplete input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.loading {
+  position: absolute;
+  top: calc(50% + 30px);
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  text-align: center;
+  color: black; /* Change loading text color to black */
+  font-style: italic;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.no-results {
+  position: absolute;
+  top: calc(50% + 30px);
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  text-align: center;
+  color: black; /* Change no-results text color to black */
+  font-style: italic;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(50% + 30px);
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: black; /* Ensure suggestion text is black */
+}
+
+.suggestions li {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.suggestions li:hover {
+  background: #f8f9fa;
+}
+
+.suggestions li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.highlight {
+  background-color: #fff3cd;
+  font-weight: bold;
+  color: black; /* Ensure highlighted text is black */
+}
+
+/* Scrollbar styles for webkit browsers */
+.suggestions::-webkit-scrollbar {
+  width: 8px;
+}
+
+.suggestions::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.suggestions::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.suggestions::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
