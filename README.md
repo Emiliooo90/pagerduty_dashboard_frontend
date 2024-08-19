@@ -2,23 +2,26 @@
 
 ## How to Run the Project
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```sh
    git clone https://github.com/Emiliooo90/pagerduty_dashboard_frontend
-   cd <repository-directory>
+   cd pagerduty_dashboard_frontend
    ```
 
-2. Install dependencies:
+2. **Install dependencies:**
    ```sh
    npm install
    ```
 
-3. Start the development server:
+3. **Start the development server:**
    ```sh
    npm start
    ```
 
-4. Open your browser and navigate to `http://localhost:3000`.
+4. **Open your browser and navigate to:**
+   ```
+   http://localhost:3000
+   ```
 
 ## Project Structure
 
@@ -35,3 +38,35 @@
 - The filtering is asynchronous.
 - The user experience is enhanced with CSS.
 - Functional components and hooks are used.
+
+## Additional Information
+
+### Styling
+
+The project uses CSS for styling. Here are some key files:
+- Global styles: `src/App.css` (startLine: 1, endLine: 138)
+- AutoComplete component styles: `src/components/AutoComplete/AutoComplete.css` (startLine: 1, endLine: 93)
+- Footer component styles: `src/components/Footer/Footer.css` (startLine: 1, endLine: 62)
+
+### TypeScript Configuration
+
+The project is configured to use TypeScript. Key configuration settings can be found in `tsconfig.json`:
+```json:tsconfig.json
+startLine: 1
+endLine: 26
+```
+
+### API Service
+
+The API service for fetching suggestions is defined in `src/services/api.ts`:
+```typescript:src/services/api.ts
+startLine: 1
+endLine: 15
+```
+
+### Custom Hooks
+
+A custom hook for debouncing is available in `src/hooks/useDebounce.ts`:
+```typescript:src/hooks/useDebounce.ts
+startLine: 1
+endLine: 24
