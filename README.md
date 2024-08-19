@@ -4,7 +4,7 @@
 
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/Emiliooo90/pagerduty_dashboard_frontend
    cd <repository-directory>
    ```
 
