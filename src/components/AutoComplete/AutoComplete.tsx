@@ -46,24 +46,29 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({ placeholder }) => {
   };
 
   return (
-    <div className="autocomplete">
-      <input
-        type="text"
-        placeholder={placeholder || 'Search...'}
-        value={query}
-        onChange={handleChange}
-      />
-      {isLoading && <div className="loading">Loading...</div>}
-      {!isLoading && query.length > 2 && suggestions.length === 0 && (
-        <div className="no-results">No results found</div>
-      )}
-      <ul className="suggestions">
-        {suggestions.map((suggestion) => (
-          <li key={suggestion.id}>
-            {highlightMatch(suggestion.name, query)}
-          </li>
-        ))}
-      </ul>
+    <div className="container">
+      <div className="card">
+        <h2 className="card-title">AutoComplete Component</h2>
+        <div className="autocomplete">
+          <input
+            type="text"
+            placeholder={placeholder || 'Search...'}
+            value={query}
+            onChange={handleChange}
+          />
+          {isLoading && <div className="loading">Loading...</div>}
+          {!isLoading && query.length > 2 && suggestions.length === 0 && (
+            <div className="no-results">No results found</div>
+          )}
+          <ul className="suggestions">
+            {suggestions.map((suggestion) => (
+              <li key={suggestion.id}>
+                {highlightMatch(suggestion.name, query)}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
