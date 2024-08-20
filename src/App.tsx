@@ -14,11 +14,11 @@ function App() {
       <div>
         <header className="App-header">
           <div className="button-container">
-            <button onClick={() => setCurrentPage('home')}>Home</button>
+            <button onClick={() => setCurrentPage('home')}>AutoComplete</button>
             <button onClick={() => setCurrentPage('index')}>Index</button>
           </div>
         </header>
-        {currentPage === 'home' && <AutoComplete placeholder="Type to search..." />}
+        {currentPage === 'home' && <AutoComplete placeholder="Type Google or Mercury or Korabl too" />}
         {currentPage === 'index' && <Index />}
       </div>
       <Footer /> {/* Add the Footer component here */}

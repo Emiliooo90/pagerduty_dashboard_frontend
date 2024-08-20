@@ -15,6 +15,20 @@
     padding: 0 2rem;
 }
 
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 60px;
+}
+
+.responsive-logo {
+    max-width: 60px; /* Adjusted the size to 60px */
+    height: auto;
+}
+
 .footer-logo a {
     color: #ecf0f1; /* Updated color */
     text-decoration: none;
