@@ -51,22 +51,11 @@ The project uses CSS for styling. Here are some key files:
 ### TypeScript Configuration
 
 The project is configured to use TypeScript. Key configuration settings can be found in `tsconfig.json`:
-```json:tsconfig.json
-startLine: 1
-endLine: 26
-```
 
 ### API Service
 
 The API service for fetching suggestions is defined in `src/services/api.ts`:
-```typescript:src/services/api.ts
-startLine: 1
-endLine: 15
-```
 
 ### Custom Hooks
 
 A custom hook for debouncing is available in `src/hooks/useDebounce.ts`:
-```typescript:src/hooks/useDebounce.ts
-startLine: 1
-endLine: 24
