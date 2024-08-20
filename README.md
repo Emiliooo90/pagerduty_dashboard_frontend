@@ -59,3 +59,8 @@ The API service for fetching suggestions is defined in `src/services/api.ts`:
 ### Custom Hooks
 
 A custom hook for debouncing is available in `src/hooks/useDebounce.ts`:
+
+### Deployed Webpage
+
+The project is deployed on Netlify and can be accessed at:
+[https://pagerdutydashboardfrontend.netlify.app/](https://pagerdutydashboardfrontend.netlify.app/)
